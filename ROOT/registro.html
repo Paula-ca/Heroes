@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="descuentos">
+            <p>20% de descuento en todos los productos</p>
+        </div>
+        <div id="titular">
+            <img src="img/ecommerce-logo.svg" alt="tienda">
+            <h2>Nombre Tienda</h2>
+        </div>
+        <nav>
+            <ul class="lista">
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="Ingresar.html">Ingresar</a></li>
+                <li><a href="index.html">Home</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <h1>Registro</h1>
+            <form action="#" method="POST" class="action-form">
+
+                <label for="name-surname"></label>
+                <input type="text" id="name-surname" name="name-surname" placeholder="Nombre y Apellido" required>
+            
+                <label for="email"></label>
+                <input type="email" id="email" pattern=".+@gmail\.com"  placeholder="Correo Electrónico" required>
+                
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+
+                <label for="country"></label>
+                <select name="country" id="country">
+                    <option value="placeholder" disabled selected hidden>Argentina</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Colombia">Colombia</option>
+                </select>
+
+                <div class="botones-form">
+                    <input type="reset" value="Resetear">
+                    <input type="submit" value="Enviar">
+                </div>
+                <p>Ya tenes una cuenta? <a href="Ingresar.html">Ingresar</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FrondEnd 1</p>
+    </footer>
+</body>
+
+</html>
