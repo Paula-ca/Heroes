@@ -27,12 +27,89 @@
                 <li><a href="registro.html">Registrarme</a></li>
                 <li><a href="Ingresar.html">Ingresar</a></li>
                 <li><a href="index.html">Home</a></li>
-               
             </ul>
         </nav>
     </header>
     <main>
-        
+        <div class="container">
+            <h4>¡Añadí tu súper!</h4>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <div class="contenedor-interno">
+                <form action="#" method="POST" class="two-columns"></form>
+
+            <section class="column">
+                <div class="fila-uno">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="fila-dos date">
+                    <label for="date">Fecha</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+
+                <div class="fila-tres description">
+                    <label for="description"></label>
+                    <textarea name="description" id="description" cols="30" rows="10"
+                        placeholder="Descripción"></textarea>
+                </div>
+
+
+            </section>
+            <section class="column">
+                <div class="fila-uno">
+                    <label for="Especie">Especie</label>
+                    <select name="Especie" id="Especie" class="especie" required>
+                        <option value="" selected disabled>Especie</option>
+                        <option value="">Human</option>
+                        <option value="1">Alien</option>
+                        <option value="2">Monster</option>
+                        <option value="3">Dino</option>
+                        <option value="4">Robot</option>
+                    </select>
+                </div>
+                <div class="fila-dos foto">
+                    <label for="foto">Agregar foto</label>
+                    <input type="file" name="foto" id="foto">
+                </div>
+                <div class="fila-tres options">
+                    <label for="poderes">Poderes</label>
+                    <div class="poderes">
+                        <div>
+                            <input type="checkbox" id="poder1" name="poder1" value="0"><label for="poder1">Volar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="poder2" name="poder2" value="1"><label for="poder2">Superinteligencia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="poder3" id="poder3" value="2"><label for="poder3">Vista de rayo láser</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="poder4" id="poder4" value="3"><label for="poder4">Billetera gorda</label>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <label for="tipo">Tipo de personaje</label>
+                    <div class="tipo">
+                        <input type="radio" name="tipo" id="heroe">
+                        <label for="heroe">Héroe/Heroína</label>
+                    </div>
+                    <div class="tipo">
+                        <input type="radio" name="tipo" id="villano">
+                        <label for="villano">Villano/Villana</label>
+                    </div>
+                    
+                </div>
+            </section>
+           
+            </div>
+            <div class="nuevo-boton">
+                <input type="submit" value="Añadir">
+
+            </div>
+        </div>
+
     </main>
     <footer>
         <p>Todos los derechos reservados a FrondEnd 1</p>

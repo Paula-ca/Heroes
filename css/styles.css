@@ -193,15 +193,16 @@ h1{
     flex-direction: column;
 }
 .form{
-    margin: 5rem 30vh 1rem 60vh;
+    margin: 5rem 50rem 1rem 60vh;
     align-items: flex-start;
-    width: 50vh;
+    width: 30rem;
     display: flex;
     flex-direction: column;
 }
 .form input,
 .form select,
-.form textarea{
+.form textarea,
+.country{
     border:1px solid black;
     margin: 0.25rem;
     padding:0.5rem;
@@ -241,9 +242,193 @@ h1{
     color: #00669F;
 }
 
+/*Form-nuevo*/
+.container{
+    background-color: #00669F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem;
+    text-align: center;
+    border-radius: 50px;
+    padding: 0.62rem;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.contenedor-interno{
+    display: inline-flex;
+    padding: 1.5rem;
+}
+.fila-uno label::before {
+    content: '*';
+    margin-right: 0.2rem;
+    color: white;
+}
+hr {
+    margin: 1rem 0;
+    width: 100%;
+    background-color: white;
+    height: 0.5px;
+    align-self: left;
+}
+h4{
+line-height: 70px;
+font-size: 2.5rem;
+color: #fff;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+
+.fila-uno input{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 23rem;
+    height: 3.94rem;
+    padding-left: 1rem;
+    color:rgba(0,0,0,0.5);
+
+}
+.especie{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 23rem;
+    height: 3.94rem;
+    padding-left: 1rem;
+    color:rgba(0,0,0,0.5);
+}
+.container p{
+    color: #fff;
+}
+.container label{
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+.column{
+    position: relative;
+    display: column;
+    align-items: center;
+  
+
+}
+.fila-uno{
+    align-items: flex-start;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.fila-dos{
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+.date input{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 23rem;
+    height: 3.94rem;
+    padding-left: 1rem;
+
+}
+input[type="file"]::-webkit-file-upload-button{
+    background: #CECECE;
+    border-radius: 0.31rem;
+    font-size: 0.81rem;
+    width: 70%;
+    height: 2rem;
+}
+input[type="file"]{
+    font-size: 0.62rem;
+    width: 100%;
+}
+.description textarea{
+    margin-left: 0.6rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    width: 23rem;
+    height: 20rem;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+.fila-tres, .poderes, .tipo{
+    margin-left: 1rem;
+}
+.fila-tres{
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.options{
+    margin-top: 4.5rem;
+}
+.fila-tres label{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+.poderes [type="checkbox"]{
+    margin-bottom: 1rem;
+    width: 1rem;
+    height: 1rem;
+}
+.poderes label, .tipo label{
+    display: inline;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}
+.poderes{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+    
+}
+input[type='radio']{
+    width: 1rem;
+    height: 1rem;
+}
+.tipo{
+
+    margin-top: 0.5rem;
+    display:inline;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.nuevo-boton input{
+    background: #1CD1B0;
+    border-radius: 23px;
+    padding: 0.6rem 8.75rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.nuevo-boton input:active {
+    background-color: #0096e7;
+    color: #ffffff;
+}
 /*footer*/
 footer{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,44 +445,82 @@ footer p{
     padding: 16px ;
 }
 
-@media (max-width:790px){
-    .descuentos{
-        width: 100%;
+@media (max-width:500px){
+    .batman{
+        margin-right: 3.7rem;
     }
-   
-    h1{
-        display: flex;
-        width: max-content;
-       
-    }
-    #titular{
-        width: cover;
-    }
-
-    .contenedor{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+ /*form(registro,ingresar,,contacto)*/
+    .action-form{
         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-   
-    footer{
-    width: cover;
-    display: flex;
+    main .form{
+        
+        margin: 3rem 2rem 1rem;
+        justify-content: center;
+        align-items: flex-start;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .form input,
+    .form select,
+    .form textarea{
+        display: flex;
+        flex-direction: column;
+        border:1px solid black;
+        width: 40vh;
+    }
 
+    .form input[type="submit"] {
+        display: flex;
+        width: 25vw;
+        text-align: center;
+        padding: 1rem 2rem;
     }
-    footer p{
-        width: max-content;
 
+    .form input[type="reset"] {
+        display: flex;
+        width: 25vw;
+        text-align: center;   
+        padding: 1rem 2rem;
     }
-   
-}
-@media all and (max-width: 400px) {
-    .img-mas {
-        right: 1rem;
-        width: 50px;
-        height: 50px;
+    /*form nuevo*/
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 2rem;
+    }
+    .contenedor-interno{
+       display: flex;
+       flex-direction: column;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+    .description{
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    .options{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .foto{
+        margin: 0;
+        padding-left: 0;
+        align-items: flex-start;
     }
     
+    @media all and (max-width: 400px) {
+        .img-mas {
+            right: 1rem;
+            width: 50px;
+            height: 50px;
+        }
+        
 
