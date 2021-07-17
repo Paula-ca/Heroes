@@ -445,7 +445,7 @@ footer p{
     padding: 16px ;
 }
 
-@media (max-width:498px){
+@media (max-width:495px){
     .batman{
         margin-right: 0.9rem;
     }
@@ -535,12 +535,12 @@ footer p{
     .nuevo-boton input{
         padding: 0.5rem 3rem;
     }
-    
+}   
     @media all and (max-width: 400px) {
         .img-mas {
             right: 1rem;
             width: 50px;
             height: 50px;
         }
-        
+    }    
 
