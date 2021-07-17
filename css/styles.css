@@ -445,7 +445,7 @@ footer p{
     padding: 16px ;
 }
 
-@media (max-width:490px){
+@media (max-width:498px){
     .batman{
         margin-right: 0.9rem;
     }
